@@ -6,6 +6,7 @@ ex) <가방2><가방1>내용물입니다</가방1></가방2> -> <가방2><가방
 + `<h1>` : heading1 (가장 큰 헤드라인)
 + `<p>` : 아주 기본 반찬 태그
 + `<head>` : 여행가방의 수화물 태그와 같은 느낌
++ `<meta charset="UTF-8">` : 한글을 쓰기 위해서는 넣어줘야함
   
 - 많이 쓰이고 쉬운 태그를 써서 간결하게 문서를 뽑아내는 사람 = HTML 코딩을 잘하는 사람
   
@@ -14,3 +15,30 @@ ex) <가방2><가방1>내용물입니다</가방1></가방2> -> <가방2><가방
 `<html>`
 `</html>`
 => 모든 html 문서에 써줘야 한다.
+
++ html 파일과 css 파일은 분리를 해주어야 한다. -> 두 언어를 섞어서 쓰는 것은 읽는데에 피로감이 많이 든다.
++ 같은 태그를 서로 다르게 꾸미는 방법 : 클래스를 이용한다.
++ 구글 html color code에 들어가서 색상 변경 또는 적용
+
+----------코드----------
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>김희원의 이력서</title>
+    <link rel="stylesheet" href="codelion.css">
+  </head>
+  <body>
+    <footer>또 다른 아무내용</footer>
+    <h1>김희원</h1>
+    <p>HTML/CSS 개발자</p>
+    <footer>copyright CODE LION. All rights reserved.</footer>
+    <footer>아무내용</footer>
+  </body>
+</html>
+--------------------------
+footer {
+    text-align: center;
+    background-color: black;
+    color: white;
+}
