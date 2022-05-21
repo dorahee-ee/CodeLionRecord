@@ -1,3 +1,5 @@
+#### django 실행하기
+
 1. 가상환경 만들고, 실행하기
    python3 -m venv 가상환경이름
    source myvenv/bin/activate (맥북)
